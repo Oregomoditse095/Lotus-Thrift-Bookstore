@@ -1,0 +1,284 @@
+/* 
+    ST10115884 Mashudu Luvhengo 
+    ST10118368 Ledwaba David
+    The code is my own work unless stated otherwise as a comment at the point of usage 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+:root{
+    --main-color:#000000;
+    --secondary-color: #ffffff;
+    --btn-bg-color: #1B263B;
+    --footer-bg-color:#1B263B;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+/* NAVIGATION BAR*/
+
+.header .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 0 auto; */
+    padding: 0 10px;
+    position: relative;
+}
+
+.header-1 .links{
+    padding: 0 15px;
+}
+.header .header-1 a:hover{
+    text-decoration: underline;
+}
+
+.header .header-1 .navbar a{
+    margin: 0 2rem;
+    /* font-size: 18px; */
+}
+.header .header-1 .icons *{
+    font-size: 1rem;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.btn-button{
+    background-color: var(--btn-bg-color);
+    color: var(--secondary-color);
+    width: 100px;
+    height: 30px;
+}
+
+.fa-cart-shopping.zero::before
+{
+    opacity: 1;
+}
+
+/*SELL PAGE*/
+.sell-books {
+    margin-left: 30%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 50px ;
+    width: 500px;
+}
+
+.sell-books form {
+    display: inline-block;
+}
+
+
+/* HEAD */
+.btn-reqbutton
+{
+    width: 250px;
+    border: 1px;
+    border-radius: 15px;
+    background-color: #1B263B;
+    color: #ffffff;
+    size: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.20px;
+}
+
+.btn-reqbutton:hover
+{
+    color: #ffffff;
+    background-color: #0877AA;
+}
+
+.sell-books  input[type=text],input[type= email], textarea
+{
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin: 0;
+    resize: vertical 
+}
+
+/* ADMIN LOGIN BUTTON*/
+.admin-login-btn a
+{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--btn-bg-color);
+    border: 2px solid var(--btn-bg-color);
+    padding: 5px 15px;
+    border-radius: 30px;
+    margin-left: 10%;
+}
+
+/* BUTTON*/
+.btn-button{
+    color: #fff;
+    border: #1B263B;
+    border-radius: 30px;
+    width: 120px;
+    height: 32px;
+}
+
+.btn-button:hover
+{
+    background-color: #0877AA;
+}
+
+/* CONTACT FORM */
+.contact {
+    margin-left: 30%;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 50px ;
+    width: 500px;
+  }
+  .contact form {
+    display: inline-block;
+}
+
+  .contact input[type=text],input[type= email], textarea{
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin: 0;
+    resize: vertical 
+  }
+
+  /* LOGIN FORM */
+  .admin-login-form {
+    border-radius: 5px;
+    padding: 150px;
+    width: 600px;
+    margin-left: 160px;
+    text-align: center;
+    align-content: center;
+    align-items: center ;
+  }
+
+  .admin-login-form form {
+    display: inline-block;
+}
+  .admin-login-form input[type=text],input[type= password] {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin: 0;
+    resize: vertical 
+  }
+
+  /* CHECK OUT */
+.checkout {
+    margin-left: 23%;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px 50px ;
+    width: 800px;
+  }
+  .checkout form {
+    display: inline-block;
+}
+
+  .checkout input[type=text],input[type= email], textarea{
+    width: 500px;
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin: 0;
+    resize: vertical 
+  }
+
+  .btn-checkbutton
+  {
+    width: 250px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #1B263B;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+
+  .btn-checkbutton:hover
+  {
+    transform: scale(1.0.1);
+    background-color: #0877AA;
+  }
+
+/* FOOTER */
+.footer{
+    background-color: var(--footer-bg-color);
+    text-align: center;
+    color: var(--secondary-color);
+    width: 100%;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+}
+ .footer a {
+     color: var(--secondary-color);
+     padding: 10px 10px;
+     margin-top: 50px;
+ }
+
+ /*Cart Button*/
+ .btn-cartbutton
+ {
+    width: 150px;
+    height: 35px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #1B263B;
+    border-radius: 30px;
+    font-size: 15px;
+ }
+
+.btn-cartbutton:hover
+{
+    transform: scale(1.0.1);
+    background-color: #0877AA;
+}
+
+.btn-shopping
+{
+    color: #1B263B;
+    border: 1px solid #1B263B;
+    padding: 5px 15px;
+    border-radius: 25px; 
+    background-color:#fff; 
+    align-items: center;
+    font-size: 13px;
+}
+.btn-shopping:hover
+{
+    transform: scale(1.0.1);
+    color: #fff;
+    background-color: #1B263B;
+    
+}
+.btn-shopping a:hover
+{
+    color: #fff;
+    background-color: #1B263B;
+    
+}
+
